@@ -1,0 +1,16 @@
+''' Write a function array_attributes that takes a NumPy array as input and returns
+its shape, size, and data type. '''
+
+import numpy as np
+
+def array_attributes(arr):
+    #return shape size and type
+    return arr.shape , arr.size , arr.dtype
+
+#example
+arr=np.array([[1,2,3],[4,5,6]], dtype=np.int32)
+
+attributes = array_attributes(arr)
+print("Shape:", attributes[0])
+print("Size:", attributes[1])
+print("Data Type:", attributes[2])
