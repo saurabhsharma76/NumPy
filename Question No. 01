@@ -1,0 +1,7 @@
+import numpy as np
+
+#creating an array from 0 to 5
+arr = np.array([0, 1, 2, 3, 4, 5])
+
+#printing the data type 
+print(arr.dtype)
