@@ -1,0 +1,16 @@
+''' Design a function item_size_info that takes a NumPy array as input and returns
+the item size and the total size in bytes. '''
+
+import numpy as np
+
+def item_size_info(arr):
+    #return item size and byte
+    return arr.itemsize, arr.nbytes
+
+#example
+arr = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.int32)
+item_size, total_size = item_size_info(arr)
+
+#printing item size and total size
+print("Item size", item_size)
+print("Total size: ",total_size)
