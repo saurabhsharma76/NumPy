@@ -1,0 +1,10 @@
+import numpy as np
+#creating integer array
+arr = np.array([1,2,3,4,5])
+#conveting to float32
+arr_float=arr.astype(np.float32)
+
+#printing new array
+print(arr_float)
+#printing data type
+print("Data type: ",arr_float.dtype)
