@@ -1,0 +1,15 @@
+''' Create a function `create_zeros_array` that takes an integer `n` as input
+and returns a NumPy array of zeros with `n` elements. '''
+
+import numpy as np
+
+def create_zeros_array(n):
+    #creat a numpy array of zeros with n elements
+    return np.zeros(n)
+
+#example
+arr = create_zeros_array(5)
+
+print(arr)
+print("Shape of the array", arr.shape)
+print("Type of the array", arr.dtype)
