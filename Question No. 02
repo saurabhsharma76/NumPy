@@ -1,0 +1,12 @@
+''' Given a NumPy array 'arr', check if its data type is float64       
+        arr = np.array([1.5, 2.6, 3.7])  '''
+
+import numpy as np
+
+# Given NumPy array
+arr = np.array([1.5, 2.6, 3.7])
+
+if arr.dtype==np.float64:
+    print("The array type is float64")
+else:
+    print("The array type is not float64")
