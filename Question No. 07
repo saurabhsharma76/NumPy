@@ -1,0 +1,13 @@
+''' Create a function array_dimension that takes a NumPy array as input and returns
+its dimensionality. '''
+
+import numpy as np
+
+
+def array_dimension(arr):
+    #return dimension
+    return arr.ndim
+
+#example
+arr = np.array([[1, 2, 3], [4, 5, 6]])  
+print("Dimensionality:", array_dimension(arr))
