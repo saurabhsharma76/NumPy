@@ -1,0 +1,14 @@
+''' Create a function array_strides that takes a NumPy array as input and returns
+the strides of the array. '''
+
+import numpy as np
+
+def array_strides(arr):
+    #return strides of the array
+    return arr.strides
+
+#example
+arr = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.int32)
+
+#printing strides of the array
+print("Strides of the array", array_strides(arr))
