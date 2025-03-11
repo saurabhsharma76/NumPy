@@ -1,0 +1,16 @@
+''' Design a function shape_stride_relationship that takes a NumPy array as
+input and returns the shape and strides of the array. '''
+
+import numpy as np
+
+def shape_stride_relationship(arr):
+    #return shape and strides of the array
+    return arr.shape,arr.strides
+
+#example
+arr = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.int32)
+shape,strides=shape_stride_relationship(arr)
+
+#printing shape and strides of the array
+print("Shape of the array", shape)
+print("Strides of the array", strides)
