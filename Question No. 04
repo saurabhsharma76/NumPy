@@ -1,3 +1,5 @@
+''' Convert an existing NumPy array 'arr' of integers to float32 data type'''
+
 import numpy as np
 #creating integer array
 arr = np.array([1,2,3,4,5])
