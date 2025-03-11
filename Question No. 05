@@ -1,0 +1,14 @@
+''' Given a NumPy array 'arr' with float64 data type, convert it to float32 to reduce 
+decimal precision '''
+
+import numpy as np
+
+#creating a NumPy array with float64 data type
+arr = np.array([1.123456789, 2.987654321, 3.1415926535], dtype=np.float64)
+
+#converting to float32 
+arr_float32 = arr.astype(np.float32)
+
+#printing the new array and its data type
+print(arr_float32)
+print("Data type:", arr_float32.dtype)
