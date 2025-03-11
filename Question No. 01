@@ -1,3 +1,5 @@
+''' Create a NumPy array 'arr' of integers from 0 to 5 and print its data type. '''
+
 import numpy as np
 
 #creating an array from 0 to 5
