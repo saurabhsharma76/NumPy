@@ -1,0 +1,15 @@
+''' Write a function `create_ones_matrix` that takes integers `rows` and `cols` as inputs and generates a 2D
+NumPy array filled with ones of size `rows x cols`. '''
+
+import numpy as np
+
+def create_ones_matrix(rows , cols):
+    #creat a 2D numpy array with rows x cols
+    return np.ones((rows , cols))
+
+#example
+matrix = create_ones_matrix(3,4)
+
+print(matrix)
+print("Shape of the matrix", matrix.shape)
+print("Type of the matrix", matrix.dtype)
