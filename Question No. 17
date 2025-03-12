@@ -1,0 +1,16 @@
+'''  Create a NumPy array and demonstrate the use of `numpy.view` to create a new
+array object with the same data. '''
+
+import numpy as np
+
+#create an original NumPy array
+original_array = np.array([10, 20, 30, 40, 50])
+
+#create a new view of the original array
+view_array = original_array.view()
+
+#modify the view to show that it affects the original array
+view_array[0] = 99
+
+print("Original Array:", original_array)
+print("View Array:", view_array)
