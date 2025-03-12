@@ -1,0 +1,13 @@
+'''  Design a function `generate_linear_space` that takes two floats `start`,
+`stop`, and an integer `num` as arguments and generates a NumPy array with num
+equally spaced values between `start` and `stop` (inclusive). '''
+
+import numpy as np
+
+def generate_linear_space(start, stop, num):
+    #generates a NumPy array with 'num' equally spaced values between 'start' and 'stop' 
+    return np.linspace(start, stop, num)
+
+#example
+arr = generate_linear_space(1.0,5.0,5)
+print(arr)
