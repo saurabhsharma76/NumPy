@@ -1,0 +1,13 @@
+'''  Write a function `generate_range_array` that takes three integers start, stop,
+and step as arguments and creates a NumPy array with a range starting from `start`,
+ending at stop (exclusive), and with the specified `step`. '''
+
+import numpy as np
+
+def generate_range_array(start, stop, step):
+    #creat a numpy array with start,stop and step
+    return np.arange(start, stop, step)
+
+#example
+arr = generate_range_array(1,10,2)
+print(arr)
