@@ -1,0 +1,12 @@
+'''  Write a function that takes two NumPy arrays and concatenates them along a
+specified axis. '''
+
+import numpy as np
+
+#example
+arr1 = np.array([[1, 2], [3, 4]])
+arr2 = np.array([[5],[6]])
+
+#along columns
+concatenated_array = np.concatenate((arr1, arr2), axis=1)
+print("Concatenated along axis 1:\n", concatenated_array)
