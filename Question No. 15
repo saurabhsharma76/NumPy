@@ -1,0 +1,12 @@
+''' Create a function `create_identity_matrix` that takes an integer `n` as input
+and generates a square identity matrix of size `n x n` using `numpy.eye`. '''
+
+import numpy as np
+
+def create_identity_matrix(n):
+    #creates an identity matrix of size nxn
+    return np.eye(n)
+
+#example
+matrix = create_identity_matrix(4)
+print(matrix)
