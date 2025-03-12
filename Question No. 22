@@ -1,0 +1,12 @@
+''' Write a Python function using NumPy to generate an array of 10 equally spaced
+values between 0 and 1 (inclusive). '''
+
+import numpy as np
+
+def generate_equally_spaced_array():
+    #generate an array of 10 equally spaced values between 0 and 1
+    return np.linspace(0,1,10)
+
+#example
+arr=generate_equally_spaced_array()
+print(arr)
