@@ -1,0 +1,12 @@
+''' Write a Python function using NumPy to create an array of 5 logarithmically
+spaced values between 1 and 1000 (inclusive) '''
+
+import numpy as np
+
+def create_log_array():
+    #create an array of 5 logarithmically spaced values between 1 and 1000
+    return np.logspace(start=0,stop=3,num=5)
+
+#example
+arr=create_log_array()
+print(arr)
