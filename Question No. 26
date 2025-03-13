@@ -1,0 +1,11 @@
+''' Access the 3rd element from the given NumPy array.
+    arr = np.array([10, 20, 30, 40, 50]) '''
+
+import numpy as np
+
+arr = np.array([10, 20, 30, 40, 50])
+
+#access the 3rd element
+third_element = arr[2]
+
+print(third_element)
