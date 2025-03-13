@@ -1,0 +1,18 @@
+'''   Given arrays arr1 of shape (2, 3) and arr2 of shape (2, 2), perform
+multiplication using NumPy broadcasting. Handle the shape incompatibility '''
+
+import numpy as np
+
+# Given arrays
+# Shape (2, 3)
+arr1 = np.array([[1, 2, 3],
+                 [4, 5, 6]])
+# Shape (2, 2)
+arr2 = np.array([[2, 3],
+                 [4, 5]])
+
+#reshaping arr1 to match the dimension of arr2
+arr2_reshape=arr2[:,:,np.newaxis]
+result=arr2_reshape*arr1
+
+print(result)
