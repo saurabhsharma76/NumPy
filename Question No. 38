@@ -1,0 +1,15 @@
+'''  Given a 1D array arr1 of shape (1, 4) and a 2D array arr2 of shape (4, 3),
+add arr1 to each row of arr2 using NumPy broadcasting. '''
+
+import numpy as np
+# Given arrays
+# Shape (1, 4)
+arr1 = np.array([[1, 2, 3, 4]])
+# Shape (4, 3)
+arr2 = np.array([[5, 6, 7],
+                 [8, 9, 10],
+                 [11, 12, 13],
+                 [14, 15, 16]])
+#Transpose arr2, add arr1, and transpose back
+result= (arr1+arr2.T).T
+print(result)
