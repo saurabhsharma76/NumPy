@@ -1,0 +1,15 @@
+''' Create a NumPy function that filters elements greater than a threshold from
+a given 1D array using boolean indexing. '''
+
+import numpy as np
+
+def filter(arr,threshold):
+    #filters elements greater than a threshold
+    return arr[arr>threshold]
+
+#example
+arr = np.array([10, 20, 5, 30, 15, 3])
+threshold = 15
+
+result=filter(arr,threshold)
+print(result)
