@@ -1,0 +1,20 @@
+''' Create a NumPy function that extracts elements from a 2D array using row and
+column indices provided in separate arrays. '''
+
+import numpy as np
+
+def extract(arr,row,col):
+    #extracts elements from a 2D array using row and column indices
+    return arr[row,col]
+
+#example
+arr_2d = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+
+#indices
+row=[0,1,2]
+col=[2,1,0]
+
+result=extract(arr_2d,row, col)
+print(result)
