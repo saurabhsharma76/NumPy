@@ -1,0 +1,12 @@
+''' Perform basic slicing to extract elements from index 2 to 5 (inclusive) from
+the given NumPy array
+    arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9]) '''
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+#extract elements from index 2 to 5
+result=arr[2:6]
+
+print(result)
