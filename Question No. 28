@@ -1,0 +1,12 @@
+''' Using boolean indexing, extract elements greater than 5 from the given NumPy array.
+    arr = np.array([3, 8, 2, 10, 5, 7]) '''
+
+import numpy as np
+
+arr = np.array([3, 8, 2, 10, 5, 7])
+#boolean condition
+condition=arr>5
+#extract elements
+result=arr[condition]
+
+print(result)
