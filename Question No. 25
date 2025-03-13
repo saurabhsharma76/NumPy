@@ -1,0 +1,22 @@
+'''  Write a function that takes a Pandas DataFrame and replaces all negative
+values in a specific column with zeros. Use NumPy operations within the Pandas
+DataFrame. '''
+
+import numpy as np
+import pandas as pd
+
+def replace_negative(df,column_name):
+    #replaces all negative values in a specific column with zeros
+    df[column_name]=np.where(df[column_name]<0,0,df[column_name])
+    return df
+
+#example
+data={
+    'A':[5, 65, -6, 5, -9],
+    'B':[75,-4,3,8,-1]
+}
+df = pd.DataFrame(data)
+
+#replace negative in column B
+update_df=replace_negative(df,'B')
+print(update_df)
