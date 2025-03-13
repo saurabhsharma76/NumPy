@@ -1,0 +1,19 @@
+''' Write a NumPy function to extract elements in specific order from a given
+2D array based on indices provided in another array '''
+
+import numpy as np
+
+def extract_elements_by_indices(arr,indices):
+    #extract elements in specific order from a given 2D array
+    row,col=zip(*indices)
+    return arr[row,col]
+
+#example
+arr_2d = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+
+#extract elements based on indices
+indices=[(0,1),(1,2),(2,0)]
+result=extract_elements_by_indices(arr_2d,indices)
+print(result)
