@@ -1,0 +1,24 @@
+''' Develop a NumPy function that extracts specific elements from a 3D array
+using indices provided in three separate arrays for each dimension '''
+
+import numpy as np
+
+def extract_element(arr,x,y,z):
+    #extracts specific elements from a 3D array using indices
+    return arr[x,y,z]
+
+#example
+arr_3d = np.array([[[1, 2, 3],
+                    [4, 5, 6]],
+                   [[7, 8, 9],
+                    [10, 11, 12]],
+                   [[13, 14, 15],
+                    [16, 17, 18]]])
+
+#indices
+x=[0,1,2]
+y=[1,0,1]
+z=[2,1,0]
+
+result=extract_element(arr_3d,x,y,z)
+print(result)
