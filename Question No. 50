@@ -1,0 +1,25 @@
+'''  Write a function that inserts and then deletes elements from a given array
+     at specified indices.   original_array = np.array([1, 2, 3, 4, 5])
+indices_to_insert = [2, 4]
+values_to_insert = [10, 11]
+indices_to_delete = [1, 3] '''
+
+import numpy as np
+
+# Given arrays
+original_array = np.array([1, 2, 3, 4, 5])
+#given indices
+indices_to_insert = [2, 4]
+values_to_insert = [10, 11]
+indices_to_delete = [1, 3]
+
+# Function to insert and delete
+def function(arr,int_ind,int_val,del_ind):
+    #insert at specific indices
+    arr=np.insert(arr,int_ind,int_val)
+    #delete at specific indices
+    arr=np.delete(arr,del_ind)
+    return arr
+
+result=function(original_array,indices_to_insert,values_to_insert,indices_to_delete)
+print(result)
