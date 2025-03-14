@@ -1,0 +1,12 @@
+'''  For the given array, find indices of maximum value in each column.
+     arr = np.array([[1, 2, 3], [4, 5, 6]]) '''
+
+import numpy as np
+
+# Given arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+#Find maximum value in each row
+ind_max=np.argmax(arr,axis=0)
+
+print(ind_max)
