@@ -1,0 +1,17 @@
+''' Create a NumPy array `arr1` with random integers and another array `arr2`
+with integers from 1 to 10. Perform element-wise addition between `arr1` and `arr2`. '''
+
+import numpy as np
+
+# Creating arr1 with random integers between 1 and 10
+arr1 = np.random.randint(1, 11, size=10)
+
+# Creating arr2 with integers from 1 to 10
+arr2 = np.arange(1, 11)
+
+# Element-wise addition
+result = arr1 + arr2
+
+print("Array 1:", arr1)
+print("Array 2:", arr2)
+print("Element-wise addition:", result)
