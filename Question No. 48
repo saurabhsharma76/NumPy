@@ -1,0 +1,21 @@
+''' Write a function that concatenates two given arrays along a specified axis.      array1 = np.array([[1, 2], [3, 4]]) 
+      array2 = np.array([[5, 6], [7, 8]]) '''
+
+import numpy as np
+
+# Given arrays
+array1 = np.array([[1, 2],
+                   [3, 4]])
+array2 = np.array([[5, 6],
+                   [7, 8]])
+
+# Function to concatenate arrays
+def concatenate_arrays(arr1, arr2, axis=0):
+    return np.concatenate((arr1, arr2), axis=axis)
+
+# Example usage
+result_axis_0 = concatenate_arrays(array1, array2, axis=0)
+result_axis_1 = concatenate_arrays(array1, array2, axis=1)
+
+print("Concatenation along axis 0:\n", result_axis_0)
+print("\nConcatenation along axis 1:\n", result_axis_1)
