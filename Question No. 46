@@ -1,0 +1,19 @@
+'''  Given a NumPy array arr, reshape it into a matrix of dimensions m rows and
+n columns. Return the reshaped matrix.
+  original_array = np.array([1, 2, 3, 4, 5, 6]) '''
+
+import numpy as np
+
+# Given array
+original_array = np.array([1, 2, 3, 4, 5, 6])
+
+# Function to reshape the array
+def reshape_array(arr, m, n):
+    if arr.size != m * n:
+        raise ValueError("The provided dimensions are incompatible with the array size.")
+    return arr.reshape(m, n)
+
+# Example usage: Reshape to 2 rows and 3 columns
+reshaped_matrix = reshape_array(original_array, 2, 3)
+
+print(reshaped_matrix)
