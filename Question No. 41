@@ -1,0 +1,12 @@
+'''   Calculate column wise mean for the given array:
+      arr = np.array([[1, 2, 3], [4, 5, 6]]) '''
+
+import numpy as np
+
+# Given arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+#Calculate column wise mean
+col_mean=np.mean(arr,axis=0)
+
+print(col_mean)
