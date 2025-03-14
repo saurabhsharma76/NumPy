@@ -1,0 +1,16 @@
+'''  Create a function that takes a matrix as input and returns the flattened array
+      input_matrix = np.array([[1, 2, 3], [4, 5, 6]]) '''
+
+import numpy as np
+
+# Given array
+input_matrix = np.array([[1, 2, 3], [4, 5, 6]])
+
+# Function to flatten the matrix
+def flatten_matrix(matrix):
+    return matrix.flatten()
+
+# Calling the function
+arr = flatten_matrix(input_matrix)
+
+print(arr)
