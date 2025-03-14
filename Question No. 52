@@ -1,0 +1,18 @@
+''' Generate a NumPy array `arr1` with sequential integers from 10 to 1 and
+another array `arr2` with integers from 1 to 10. Subtract `arr2` from `arr1`
+element-wise. '''
+
+import numpy as np
+
+# Creating arr1 with integers from 10 to 1
+arr1 = np.arange(10,0,-1)
+
+# Creating arr2 with integers from 1 to 10
+arr2 = np.arange(1, 11)
+
+# Element-wise subtraction
+result = arr1 - arr2
+
+print("Array 1:", arr1)
+print("Array 2:", arr2)
+print("Element-wise subtract:", result)
