@@ -1,0 +1,15 @@
+''' For the given array, apply custom function to calculate moving sum along rows.
+     arr = np.array([[1, 2, 3], [4, 5, 6]]) '''
+
+import numpy as np
+
+# Given arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+# Custom function to calculate moving sum with a window size of 2
+def moving_sum(arr,window_size=2):
+    return np.convolve(arr,np.ones(window_size,dtype=int),"valid")
+# Apply the function along rows (axis=1)
+result=np.apply_along_axis(moving_sum,axis=1,arr=arr)
+
+print(result)
