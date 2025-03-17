@@ -1,0 +1,18 @@
+''' For the given NumPy array and swap its byte order conditionally based on system endianness using
+newbyteorder().
+   arr = np.array([1, 2, 3], dtype=np.int32) '''
+
+import numpy as np
+
+# Given array
+arr = np.array([1, 2, 3], dtype=np.int32)
+
+# Check the system's endianness and conditionally swap byte order
+if arr.dtype.byteorder == '=':  # Native byte order
+    swapped_arr = arr.view(arr.dtype.newbyteorder('<' if np.little_endian else '>'))
+else:
+    swapped_arr = arr.view(arr.dtype.newbyteorder('='))
+
+# Display the original and swapped arrays
+print("Original array:", arr)
+print("Array after conditional byte order swap:", swapped_arr)
