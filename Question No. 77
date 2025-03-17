@@ -1,0 +1,22 @@
+'''  Create a 2D NumPy array `matrix` of shape (3, 3) with random integers.
+Extract a slice `view_slice` from the matrix. Modify an element in `view_slice`
+and observe if it changes the original `matrix`. '''
+
+import numpy as np
+
+# Create a 2D NumPy array of shape (3, 3) with random integers between 1 and 100
+np.random.seed(42)  # For reproducibility
+matrix = np.random.randint(1, 101, (3, 3))
+
+# Extract a slice (view) from the matrix
+view_slice = matrix[0:2, 0:2]
+
+# Modify an element in the view slice
+view_slice[0, 0] = 999
+
+# Print the original matrix and the view slice
+print("Original matrix:")
+print(matrix)
+
+print("\nView slice:")
+print(view_slice)
