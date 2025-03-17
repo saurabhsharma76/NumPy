@@ -1,0 +1,18 @@
+'''  Create a NumPy array `arr1` with values from 1 to 10. Create a copy of `arr1`
+named `copy_arr` and modify an element in `copy_arr`. Check if modifying `copy_arr`
+affects `arr1`. '''
+
+import numpy as np
+
+# Create an array arr1 with values from 1 to 10
+arr1 = np.arange(1, 11)
+
+# Create a copy of arr1
+copy_arr = arr1.copy()
+
+# Modify an element in copy_arr
+copy_arr[0] = 99
+
+# Print both arrays to check if arr1 is affected
+print("Original array (arr1):", arr1)
+print("Modified copy (copy_arr):", copy_arr)
