@@ -1,0 +1,17 @@
+''' Create a NumPy array `arr1` with random integers and another array `arr2` with integers from 1 to 5.
+Perform element-wise multiplication between `arr1` and `arr2`. '''
+
+import numpy as np
+
+# Generating arr1 with random integers between 1 and 10 (size 5)
+arr1 = np.random.randint(1, 11, size=5)
+
+# Generating arr2 with integers from 1 to 5
+arr2 = np.arange(1, 6)
+
+# Element-wise multiplication
+result = arr1 * arr2
+
+print("Array 1:", arr1)
+print("Array 2:", arr2)
+print("Element-wise multiplication:", result)
