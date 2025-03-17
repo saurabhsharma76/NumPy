@@ -1,0 +1,13 @@
+'''  Filter elements >20  in the given NumPy array.
+   arr = np.array([12, 25, 6, 42, 8, 30]) '''
+
+import numpy as np
+
+# Given array
+arr = np.array([12, 25, 6, 42, 8, 30])
+
+# Filtering elements greater than 20
+filtered_arr = arr[arr > 20]
+
+# Display the result
+print("Filtered Array:", filtered_arr)
