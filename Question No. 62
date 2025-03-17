@@ -1,0 +1,16 @@
+'''  Generate an array of 50 random numbers between 1 and 100. Find the 25th and
+75th percentiles of the dataset. '''
+
+import numpy as np
+
+# Generate 50 random numbers between 1 and 100
+data = np.random.randint(1, 101, 50)
+
+# Calculate percentiles
+percentile_25 = np.percentile(data, 25)
+percentile_75 = np.percentile(data, 75)
+
+# Output the results
+print("Dataset:", data)
+print("25th Percentile:", percentile_25)
+print("75th Percentile:", percentile_75)
