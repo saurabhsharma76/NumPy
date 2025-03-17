@@ -1,0 +1,14 @@
+''' Create a NumPy array of integers and find the index of a specific element. '''
+
+import numpy as np
+
+# Create a NumPy array of integers
+arr = np.array([10, 20, 30, 40, 50])
+
+# Find the index of a specific element (e.g., 30)
+element_to_find = 30
+index = np.where(arr == element_to_find)
+
+# Display the result
+print("Array:", arr)
+print(f"Index of {element_to_find}:", index[0][0] if index[0].size > 0 else "Element not found")
