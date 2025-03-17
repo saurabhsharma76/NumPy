@@ -1,0 +1,15 @@
+''' Write a function that concatenates strings in a NumPy array element-wise.
+arr1 = np.array(['Hello', 'World'])
+arr2 = np.array(['Open', 'AI']) '''
+
+import numpy as np
+
+def concatenate_strings(arr1, arr2, separator=" "):
+    # Using np.char.add to perform element-wise string concatenation
+    return np.char.add(arr1, separator + arr2)
+
+# Example usage
+arr1 = np.array(['Hello', 'World'])
+arr2 = np.array(['Open', 'AI'])
+result = concatenate_strings(arr1, arr2)
+print("Concatenated array:", result)
