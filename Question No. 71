@@ -1,0 +1,13 @@
+''' For the given NumPy array, check its byte order using the dtype attribute byteorder
+    arr = np.array([1, 2, 3]) '''
+
+import numpy as np
+
+# Given array
+arr = np.array([1, 2, 3])
+
+# Checking byte order
+byte_order = arr.dtype.byteorder
+
+# Display the result
+print("Byte Order:", byte_order)
