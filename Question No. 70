@@ -1,0 +1,13 @@
+''' Filter elements which are ≥ 20 and ≤ 40 from a given NumPy array.
+    arr = np.array([10, 20, 30, 40, 50]) '''
+
+import numpy as np
+
+# Given array
+arr = np.array([10, 20, 30, 40, 50])
+
+# Filtering elements between 20 and 40 (inclusive)
+filtered_arr = arr[(arr >= 20) & (arr <= 40)]
+
+# Display the result
+print("Filtered Array:", filtered_arr)
