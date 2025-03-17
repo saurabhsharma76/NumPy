@@ -1,0 +1,20 @@
+'''  Create a dataset of 100 random integers between 1 and 1000. Compute the mean, median, variance, and
+standard deviation of the dataset using NumPy's functions. '''
+
+import numpy as np
+
+# Generate 100 random integers between 1 and 1000
+data = np.random.randint(1, 1001, 100)
+
+# Calculate statistics
+mean_value = np.mean(data)
+median_value = np.median(data)
+variance_value = np.var(data)
+std_deviation = np.std(data)
+
+# Output the results
+print("Dataset:", data)
+print("Mean:", mean_value)
+print("Median:", median_value)
+print("Variance:", variance_value)
+print("Standard Deviation:", std_deviation)
