@@ -1,0 +1,16 @@
+''' Write a function that counts the occurrences of a specific substring within
+a NumPy array of strings.
+    arr = np.array(['hello', 'world', 'hello', 'numpy', 'hello']) '''
+
+import numpy as np
+
+def count_substring(arr, substring):
+    # Using np.char.count to count occurrences of the substring in each element
+    counts = np.char.count(arr, substring)
+    return np.sum(counts)
+
+# Example usage
+arr = np.array(['hello', 'world', 'hello', 'numpy', 'hello'])
+substring = 'hello'
+result = count_substring(arr, substring)
+print("Occurrences of 'hello':", result)
