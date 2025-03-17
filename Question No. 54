@@ -1,0 +1,17 @@
+''' Generate a NumPy array `arr1` with even integers from 2 to 10 and another array `arr2` with integers from 1
+to 5. Perform element-wise division of `arr1` by `arr2`. '''
+
+import numpy as np
+
+# Generating arr1 with even integers from 2 to 10
+arr1 = np.arange(2, 11, 2)
+
+# Generating arr2 with integers from 1 to 5
+arr2 = np.arange(1, 6)
+
+# Element-wise division
+result = arr1 / arr2
+
+print("Array 1:", arr1)
+print("Array 2:", arr2)
+print("Element-wise division:", result)
