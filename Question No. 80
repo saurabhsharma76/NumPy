@@ -1,0 +1,22 @@
+''' Create a NumPy array `data` of shape (3, 4) with random integers. Extract a
+copy `data_copy` of elements greater than 5. Modify an element in `data_copy` and
+verify if it affects the original `data`. '''
+
+import numpy as np
+
+# Create a NumPy array with random integers between 1 and 10
+np.random.seed(42)  # For reproducibility
+data = np.random.randint(1, 11, size=(3, 4))
+
+# Extract a copy of elements greater than 5
+data_copy = data[data > 5].copy()
+
+# Modify an element in the copy
+data_copy[0] = 99
+
+# Print the original array and the copy
+print("Original array (data):")
+print(data)
+
+print("\nCopied array with elements > 5 (data_copy):")
+print(data_copy)
