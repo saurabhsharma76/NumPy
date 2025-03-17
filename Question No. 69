@@ -1,0 +1,13 @@
+'''  Filter elements which are divisible by 3 from a given NumPy array.
+     arr = np.array([1, 5, 8, 12, 15]) '''
+
+import numpy as np
+
+# Given array
+arr = np.array([1, 5, 8, 12, 15])
+
+# Filtering elements divisible by 3
+filtered_arr = arr[arr % 3 == 0]
+
+# Display the result
+print("Filtered Array:", filtered_arr)
