@@ -1,0 +1,14 @@
+'''  Write a function that finds the length of the longest string in a NumPy array.
+
+arr = np.array(['apple', 'banana', 'grape', 'pineapple']) '''
+
+import numpy as np
+
+def longest_string_length(arr):
+    # Using np.vectorize to apply len function to each element
+    lengths = np.vectorize(len)(arr)
+    return lengths.max()
+
+# Example usage
+arr = np.array(['apple', 'banana', 'grape', 'pineapple'])
+print("Length of the longest string:", longest_string_length(arr))
