@@ -1,0 +1,13 @@
+''' For the given NumPy array, perform byte swapping in place using byteswap().
+    arr = np.array([1, 2, 3], dtype=np.int32)'''
+
+import numpy as np
+
+# Given array
+arr = np.array([1, 2, 3], dtype=np.int32)
+
+# Performing byte swapping in place
+arr.byteswap(inplace=True)
+
+# Display the result
+print("Array after byte swapping:", arr)
