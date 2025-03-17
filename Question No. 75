@@ -1,0 +1,16 @@
+''' For the given NumPy array, check if byte swapping is necessary for the
+current system using dtype attribute byteorder.
+   arr = np.array([1, 2, 3], dtype=np.int32) '''
+
+import numpy as np
+
+# Given array
+arr = np.array([1, 2, 3], dtype=np.int32)
+
+# Check if the byte order is different from the system's endianness
+if arr.dtype.byteorder == '=':  # Native byte order
+    print("No byte swapping is necessary.")
+elif (arr.dtype.byteorder == '<' and not np.little_endian) or (arr.dtype.byteorder == '>' and np.little_endian):
+    print("Byte swapping is necessary.")
+else:
+    print("No byte swapping is necessary.")
