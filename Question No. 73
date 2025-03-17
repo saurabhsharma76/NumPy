@@ -1,0 +1,15 @@
+''' For the given NumPy array, swap its byte order without modifying the original
+array using newbyteorder().
+      arr = np.array([1, 2, 3], dtype=np.int32)'''
+
+import numpy as np
+
+# Given array
+arr = np.array([1, 2, 3], dtype=np.int32)
+
+# Swapping byte order without modifying the original array
+swapped_arr = arr.newbyteorder()
+
+# Display the original and swapped arrays
+print("Original array:", arr)
+print("Array after byte order swap:", swapped_arr)
