@@ -1,0 +1,22 @@
+'''  Create a NumPy array `orig_array` of shape (2, 4) with values from 1 to 8.
+Create a reshaped view `reshaped_view` of shape (4, 2) from orig_array. Modify
+an element in `reshaped_view` and check if it reflects changes in the original
+`orig_array`. '''
+
+import numpy as np
+
+# Create a NumPy array with values from 1 to 8 and shape (2, 4)
+orig_array = np.arange(1, 9).reshape(2, 4)
+
+# Create a reshaped view with shape (4, 2)
+reshaped_view = orig_array.reshape(4, 2)
+
+# Modify an element in the view
+reshaped_view[2, 1] = 99
+
+# Print the original array and the reshaped view
+print("Original array (orig_array):")
+print(orig_array)
+
+print("\nReshaped view (reshaped_view):")
+print(reshaped_view)
