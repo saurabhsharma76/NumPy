@@ -1,0 +1,13 @@
+''' Write a function that replaces occurrences of a substring in a NumPy array of strings with a new string.
+    arr = np.array(['apple', 'banana', 'grape', 'pineapple']) '''
+
+import numpy as np
+
+def replace_substring(arr, old_substring, new_substring):
+    # Using np.char.replace to perform the substring replacement
+    return np.char.replace(arr, old_substring, new_substring)
+
+# Example usage
+arr = np.array(['apple', 'banana', 'grape', 'pineapple'])
+result = replace_substring(arr, 'apple', 'orange')
+print("Modified array:", result)
