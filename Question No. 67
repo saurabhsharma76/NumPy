@@ -1,0 +1,13 @@
+'''  Generate a random NumPy array and sort it in ascending order. '''
+
+import numpy as np
+
+# Generate a random NumPy array with 10 integers between 1 and 100
+arr = np.random.randint(1, 101, size=10)
+
+# Sort the array in ascending order
+sorted_arr = np.sort(arr)
+
+# Display the original and sorted arrays
+print("Original Array:", arr)
+print("Sorted Array:", sorted_arr)
