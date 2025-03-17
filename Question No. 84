@@ -1,0 +1,18 @@
+'''  Generate a square matrix `F` and compute its determinant. '''
+
+import numpy as np
+
+# Generate a 3x3 square matrix F
+F = np.array([[2, 4, 3],
+              [1, 5, 7],
+              [6, 8, 9]])
+
+# Compute the determinant
+determinant = np.linalg.det(F)
+
+# Display the matrix and its determinant
+print("Matrix F:")
+print(F)
+
+print("\nDeterminant of F:")
+print(determinant)
