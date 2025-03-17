@@ -1,0 +1,18 @@
+'''  Create a square matrix `G` and find its inverse. '''
+
+import numpy as np
+
+# Generate a 3x3 square matrix G
+G = np.array([[2, 4, 3],
+              [1, 5, 7],
+              [6, 8, 9]])
+
+# Compute the inverse
+inverse_G = np.linalg.inv(G)
+
+# Display the matrix and its inverse
+print("Matrix G:")
+print(G)
+
+print("\nInverse of G:")
+print(inverse_G)
